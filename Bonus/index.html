@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Train tickets with Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="form_wrapper">
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+
+        <div class="form">
+          <div class="form_group w-33">
+            <label for="full-name">Nome Cognome</label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="form_group w-33">
+            <label for="distance">Km da percorrere</label>
+            <input type="number" name="distance" id="distance" />
+          </div>
+          <div class="form_group w-33">
+            <label for="age">Fascia d'età</label>
+            <select name="age" id="age">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+
+          <div class="form_group w-100 mt-3">
+            <button id="generate">Genera</button>
+            <button id="cancel">Annulla</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>il tuo biglietto</h2>
+        <div class="dettaglio">
+          <h3>DETTAGLIO PASSEGGERI</h3>
+          <div>
+            <div class="row">
+              <div class="col bg_grey">
+                <h4 class="passeggero">NOME PASSEGGERO</h4>
+                <p id="nome_passeggero"></p>
+              </div>
+              <div class="col">
+                <h4>Offerta</h4>
+                <p id="offerta"></p>
+              </div>
+              <div class="col">
+                <h4>Carrozza</h4>
+                <p id="carrozza"></p>
+              </div>
+              <div class="col">
+                <h4>Codice CP</h4>
+                <p id="codice_cp"></p>
+              </div>
+              <div class="col">
+                <h4>Costo Biglietto</h4>
+                <p id="costo_biglietto"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <div id="result"></div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

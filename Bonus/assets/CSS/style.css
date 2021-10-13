@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: palevioletred;
+}
+
+.container {
+  width: 900px;
+  margin: 2rem auto;
+}
+/* utility */
+.row {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.col {
+  width: 20%;
+}
+.col,
+h3 {
+  padding: 0.5rem;
+}
+.bg_grey {
+  background-color: grey;
+}
+/* form */
+.form_wrapper,
+h2 {
+  text-align: center;
+}
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #808080;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+label {
+  display: block;
+  color: palevioletred;
+  padding: 1rem 0;
+}
+
+.w-33 {
+  width: calc(100% / 3);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+input,
+select {
+  border-radius: 5px;
+  padding: 0.25rem;
+  border: 2px solid palevioletred;
+}
+button {
+  color: palevioletred;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+}
+#generate {
+  border: 2px solid orange;
+}
+
+.dettaglio {
+  background-color: white;
+  padding: 1rem;
+}
+h4 {
+  padding: 1rem 0 2rem 0;
+}
+.passeggero {
+  padding: 0.25rem 0;
+}
+#nome_passeggero {
+  font-weight: bold;
+}
